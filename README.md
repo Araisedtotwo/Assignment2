@@ -58,7 +58,6 @@ IGNORE 1 LINES
   ```
 ---
 #### Code in R Markdown to import DB data for analysis
-```
 ```{r}
 library(RMySQL)
 
@@ -79,7 +78,7 @@ print(ratings)
   - Yes, [Google Sheet](https://docs.google.com/spreadsheets/d/18ak4byfqrXkBLOweYUkbEacYKbMiJ02OVxWaqHhGmpc/edit?usp=sharing)
   
 - Are you using R Markdown text and headers?
-  - Yes, please go througth the RMarkdown file, also available at [Assignment_2.Rmd](https://github.com/Araisedtotwo/Assignment2/Assignment_2.Rmd)
+  - Yes, please go througth the RMarkdown file, also available at [Assignment_2.Rmd](https://github.com/Araisedtotwo/Assignment2/blob/master/Assignment_2.Rmd)
 
 #### Analysis
 - Yes, I would recommend `Avatar` the most because the mean value of ratings is highest for movie Avatar
