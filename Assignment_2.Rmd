@@ -1,0 +1,29 @@
+---
+title: "Assignment2"
+author: "Arushi Arora"
+date: "9/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(RMySQL)
+
+mysqlconnection = dbConnect(MySQL(), user='root', password='db_password_here', dbname ='aws_movie_ratings',host='aws-movie-rating.cc7r4c0owv8u.us-east-1.rds.amazonaws.com')
+
+result = dbSendQuery(mysqlconnection,"SELECT `Name`,`Avatar`,`Wolf of the Wall Street`,`Avengers 4`,`The Secret - Dare to Dream`,`Sonic the Hedgehog`,`Jumanji - The next level`  from movie_ratings")
+
+data.frame=fetch(result)
+ratings = data.frame
+print(ratings)
+```
+
+## Summary
+```{r, echo=FALSE}
+summary(ratings)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
