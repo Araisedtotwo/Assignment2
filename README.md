@@ -58,7 +58,8 @@ IGNORE 1 LINES
   ```
 ---
 #### Code in R Markdown to import DB data for analysis
-```{r}
+```
+
 library(RMySQL)
 
 mysqlconnection = dbConnect(MySQL(), user='root', password='db_password_here', dbname ='aws_movie_ratings',host='aws-movie-rating.cc7r4c0owv8u.us-east-1.rds.amazonaws.com')
